@@ -1,0 +1,161 @@
+/* Palette borrowed from the UF PHHP faculty profile pages */
+:root {
+  --navy: #15284C;
+  --navy-dark: #0F1D38;
+  --orange: #ED6B21;
+  --slate-light: #A1B1CE;
+  --slate-lightest: #D7DEEA;
+  --bg: #F6FBFC;
+  --text: #313131;
+  --link: #1F4E9A;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  letter-spacing: -0.01rem;
+}
+
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a { color: var(--link); }
+a:hover { color: var(--orange); }
+
+/* Header */
+.site-header {
+  background: var(--navy-dark);
+  color: #fff;
+  padding: 48px 0 40px;
+}
+.site-header h1 {
+  margin: 4px 0 8px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.eyebrow {
+  margin: 0;
+  color: var(--slate-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.subtitle {
+  margin: 0;
+  max-width: 640px;
+  color: var(--slate-lightest);
+  font-size: 1.15rem;
+}
+
+/* Nav */
+.site-nav {
+  background: var(--navy);
+  border-bottom: 3px solid var(--orange);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-nav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.site-nav a:hover { color: var(--orange); }
+
+/* Sections */
+main { padding: 32px 0; }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--slate-lightest);
+  padding: 28px 36px;
+  margin-bottom: 24px;
+  scroll-margin-top: 64px;
+}
+.card h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--slate-lightest);
+  color: var(--navy);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.subheading { margin-top: 20px !important; }
+
+/* Aims */
+.aims { padding-left: 1.2em; }
+.aims li { margin-bottom: 12px; }
+.aims li::marker { color: var(--orange); font-weight: 600; }
+.aims p { margin: 0; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 0; }
+.tags span {
+  background: var(--bg);
+  border: 1px solid var(--slate-lightest);
+  color: var(--navy);
+  font-size: 0.85rem;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* People */
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.person {
+  border-left: 3px solid var(--orange);
+  padding-left: 14px;
+}
+.person p { margin: 0; font-size: 0.95rem; }
+.person .name { font-weight: 600; font-size: 1.05rem; color: var(--navy); }
+
+/* Repos & pubs */
+.repos, .pubs { list-style: none; padding: 0; margin: 0; }
+.repos li, .pubs li {
+  padding: 12px 0;
+  border-top: 1px solid var(--slate-lightest);
+}
+.repos li:first-child, .pubs li:first-child { border-top: 0; }
+.repo-name { font-weight: 600; font-size: 1.05rem; }
+.repos p { margin: 4px 0 0; }
+
+/* Footer */
+.site-footer {
+  background: var(--navy-dark);
+  color: var(--slate-lightest);
+  font-size: 0.85rem;
+  padding: 24px 0;
+}
+.site-footer p { margin: 6px 0; }
+
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 2rem; }
+  .card { padding: 20px; }
+}

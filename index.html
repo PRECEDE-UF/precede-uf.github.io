@@ -1,2 +1,183 @@
-PRECEDE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRECEDE II | University of Florida</title>
+  <meta name="description" content="PRECEDE II: Presurgical Cognitive Evaluation Via Digital Clockface Drawing Focusing on Educational Heterogeneity. An NIH-funded project at the University of Florida.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="site-header">
+  <div class="wrap">
+    <p class="eyebrow">University of Florida &middot; NIH-funded research</p>
+    <h1>PRECEDE II</h1>
+    <p class="subtitle">Presurgical Cognitive Evaluation Via Digital Clockface Drawing Focusing on Educational Heterogeneity</p>
+  </div>
+</header>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#aims">Aims</a>
+    <a href="#team">Team</a>
+    <a href="#repositories">Repositories</a>
+    <a href="#publications">Publications</a>
+    <a href="#data">Data Availability</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about" class="card">
+    <h2>About the Project</h2>
+    <p>
+      Many older adults undergo surgery each year, and some are at elevated risk of postoperative
+      cognitive complications such as delirium. Brief, reliable cognitive screening before surgery
+      can help care teams identify those at risk. PRECEDE II builds on our earlier work using the
+      <strong>digital Clock Drawing Test</strong>, a quick pen-and-paper style task captured with a
+      digital pen, to assess cognition in older adults preparing for surgery.
+    </p>
+    <p>
+      A central focus of PRECEDE II is <strong>educational heterogeneity</strong>. Standard screening
+      tools and classifiers can mistake lower formal education for cognitive impairment. We develop
+      explainable machine learning methods that work for all patients, regardless of educational background.
+    </p>
+    <p>
+      In 2026 the project received a five-year, $3.7 million renewal award from the National Institutes
+      of Health, supporting the work through 2031.
+      <a href="https://bme.ufl.edu/2026/07/15/rashidi-receives-nih-grant-renewal-to-advance-cognitive-screening-for-older-adults-undergoing-surgery/">Read the UF announcement &rarr;</a>
+    </p>
+  </section>
+
+  <section id="aims" class="card">
+    <h2>Specific Aims</h2>
+    <ol class="aims">
+      <li>
+        <h3>Explainable AI-enhanced digital Clock Drawing Test</h3>
+        <p>Develop interpretable deep learning models that extract clinically meaningful features from digital clock drawings.</p>
+      </li>
+      <li>
+        <h3>Postoperative outcome prediction</h3>
+        <p>Build predictive models that combine cognitive and surgical data to improve prediction of postoperative outcomes.</p>
+      </li>
+      <li>
+        <h3>Equitable screening across education levels</h3>
+        <p>Evaluate alternative digital cognitive screening approaches for people with lower formal education.</p>
+      </li>
+    </ol>
+    <p class="tags">
+      <span>Digital Clock Drawing Test</span>
+      <span>Explainable AI</span>
+      <span>Machine learning</span>
+      <span>Federated learning</span>
+      <span>Perioperative cognition</span>
+      <span>Algorithmic fairness</span>
+    </p>
+  </section>
+
+  <section id="team" class="card">
+    <h2>Team</h2>
+    <h3 class="subheading">Principal Investigators</h3>
+    <div class="people">
+      <div class="person">
+        <p class="name">Parisa Rashidi, Ph.D.</p>
+        <p>Professor, J. Crayton Pruitt Family Department of Biomedical Engineering</p>
+        <!-- TODO: add link to the i-HEAL lab website -->
+        <p>Director, Intelligent Health Lab (i-HEAL)</p>
+      </div>
+      <div class="person">
+        <p class="name"><a href="https://phhp.ufl.edu/profile/price-catherine/">Catherine Price, Ph.D., ABPP/CN</a></p>
+        <p>Professor, Department of Clinical and Health Psychology</p>
+        <p>Director, <a href="https://anest.ufl.edu/clinical-divisions/perioperative-cognitive-anesthesia-network/">Perioperative Cognitive Anesthesia Network (PeCAN)</a></p>
+      </div>
+    </div>
+    <h3 class="subheading">Participating Units</h3>
+    <ul>
+      <li>Herbert Wertheim College of Engineering</li>
+      <li>College of Public Health and Health Professions</li>
+      <li>College of Medicine</li>
+      <li>UF Health Perioperative Cognitive Anesthesia Network (PeCAN)</li>
+    </ul>
+  </section>
+
+  <section id="repositories" class="card">
+    <h2>Code Repositories</h2>
+    <p>Code developed as part of PRECEDE II is available in the
+      <a href="https://github.com/PRECEDE-UF">PRECEDE-UF GitHub organization</a>.</p>
+    <ul class="repos">
+      <li>
+        <a class="repo-name" href="https://github.com/PRECEDE-UF/FaIRClocks">FaIRClocks</a>
+        <p>Fair and interpretable representation of the Clock Drawing Test using a Relevance Factor VAE,
+          with bias mitigation to reduce misclassification of people with lower education.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications" class="card">
+    <h2>Selected Publications</h2>
+    <ul class="pubs">
+      <li>
+        Zhang J, Bandyopadhyay S, Kimmet F, Wittmayer J, Khezeli K, Libon DJ, Price CC, Rashidi P.
+        <a href="https://www.researchsquare.com/article/rs-3398970/v1">FaIRClocks: Fair and interpretable representation of the clock drawing test for mitigating classifier bias against lower educational groups.</a>
+        <em>Research Square</em> (preprint), 2023.
+      </li>
+      <li>
+        <a href="https://www.nature.com/articles/s41598-023-34518-9">Explainable semi-supervised deep learning shows that dementia is associated with small, avocado-shaped clocks with irregularly placed hands.</a>
+        <em>Scientific Reports</em>, 2023.
+      </li>
+      <li>
+        <a href="https://www.nature.com/articles/s41598-022-12024-8">Variational autoencoder provides proof of concept that compressing CDT to extremely low-dimensional space retains its ability of distinguishing dementia.</a>
+        <em>Scientific Reports</em>, 2022.
+      </li>
+    </ul>
+  </section>
+
+  <section id="data" class="card">
+    <h2>Data Availability</h2>
+    <p>
+      The data used in PRECEDE II were collected from human participants and contain protected health
+      information. To protect participant privacy, the datasets are not publicly released.
+    </p>
+    <p>
+      De-identified data are available upon reasonable request. Requests are reviewed to ensure compliance
+      with the National Institutes of Health (NIH) data sharing policies, the University of Florida
+      Institutional Review Board (IRB), and the terms of participant consent. A data use agreement may be required.
+    </p>
+    <p>
+      Please direct all data requests to Dr. Catherine Price
+      (<a href="mailto:cep23@phhp.ufl.edu">cep23@phhp.ufl.edu</a>). Include your name, affiliation,
+      intended use of the data, and the specific variables or modalities requested.
+    </p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>
+      <strong>Catherine Price, Ph.D., ABPP/CN</strong><br>
+      Department of Clinical and Health Psychology<br>
+      University of Florida<br>
+      101 S. Newell Drive, Gainesville, FL 32610<br>
+      <a href="mailto:cep23@phhp.ufl.edu">cep23@phhp.ufl.edu</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <!-- TODO: add NIH grant number(s) -->
+    <p>Research reported on this site is supported by the National Institutes of Health.
+      The content is solely the responsibility of the authors and does not necessarily represent
+      the official views of the National Institutes of Health.</p>
+    <p>&copy; 2026 PRECEDE II &middot; University of Florida</p>
+  </div>
+</footer>
+
+</body>
+</html>
