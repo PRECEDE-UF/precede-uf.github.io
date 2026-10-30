@@ -16,6 +16,7 @@
   <div class="wrap">
     <p class="eyebrow">University of Florida &middot; NIH-funded research</p>
     <h1>PRECEDE II</h1>
+    <p class="headline">Improving cognitive screening before surgery across educational backgrounds</p>
     <p class="subtitle">Presurgical Cognitive Evaluation Via Digital Clockface Drawing Focusing on Educational Heterogeneity</p>
   </div>
 </header>
@@ -43,6 +44,14 @@
       <strong>digital Clock Drawing Test</strong>, a quick pen-and-paper style task captured with a
       digital pen, to assess cognition in older adults preparing for surgery.
     </p>
+    <figure class="clock-examples">
+      <div class="clock-pair">
+        <img src="figures/Picture1.png" alt="Hand-drawn clock with evenly spaced numbers 1 to 12 and two hands pointing to ten past eleven" width="228" height="224">
+        <img src="figures/Picture2.png" alt="Hand-drawn clock with irregular outline, numbers crowded on one side, and hands drawn near the 11" width="264" height="242">
+      </div>
+      <figcaption>Example clock drawings. Left: a well-organized clock. Right: a clock with
+        distorted shape and misplaced numbers and hands.</figcaption>
+    </figure>
     <p>
       A central focus of PRECEDE II is <strong>educational heterogeneity</strong>. Standard screening
       tools and classifiers can mistake lower formal education for cognitive impairment. We develop
@@ -89,12 +98,14 @@
         <p class="name"><a href="https://phhp.ufl.edu/profile/price-catherine/">Catherine Price, Ph.D., ABPP/CN</a></p>
         <p>Professor, Department of Clinical and Health Psychology</p>
         <p>Director, <a href="https://anest.ufl.edu/clinical-divisions/perioperative-cognitive-anesthesia-network/">Perioperative Cognitive Anesthesia Network (PeCAN)</a></p>
+        <p class="profile-links"><a href="https://scholar.google.com/citations?user=lpUxjHAAAAAJ&amp;hl=en">Google Scholar</a></p>
       </div>
       <div class="person">
         <p class="name">Parisa Rashidi, Ph.D.</p>
         <p>Professor, J. Crayton Pruitt Family Department of Biomedical Engineering</p>
         <!-- TODO: add link to the i-HEAL lab website -->
         <p>Director, Intelligent Health Lab (i-HEAL)</p>
+        <p class="profile-links"><a href="https://scholar.google.com/citations?user=Rtej0FIAAAAJ&amp;hl=en">Google Scholar</a></p>
       </div>
     </div>
     <!-- <h3 class="subheading">Participating Units</h3>
@@ -115,6 +126,12 @@
         <a class="repo-name" href="https://github.com/PRECEDE-UF/FaIRClocks">FaIRClocks</a>
         <p>Fair and interpretable representation of the Clock Drawing Test using a Relevance Factor VAE,
           with bias mitigation to reduce misclassification of people with lower education.</p>
+        <figure class="pipeline">
+          <a href="figures/Picture3.png"><img src="figures/Picture3.png" alt="FaIRClocks pipeline: an RF-VAE encoder is pretrained on 54,027 unlabeled NHATS clocks, then applied to copy and command clocks from 863 PeCAN patients; the 10-dimensional latent features plus demographics pass through a reweighting step to LR and SVM classifiers that predict cognitive impairment (MMSE, ATT-C, MEM-C)" width="1484" height="804"></a>
+          <figcaption>FaIRClocks pipeline, from
+            <a href="https://www.nature.com/articles/s41598-024-68481-w">Developing a fair and interpretable representation of the clock drawing test for mitigating low education and racial bias</a>.
+            Click to enlarge.</figcaption>
+        </figure>
       </li>
     </ul>
   </section>
