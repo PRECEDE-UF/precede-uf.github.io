@@ -39,17 +39,17 @@ a:hover { color: var(--orange); }
 }
 .header-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
 }
 .header-logo {
   flex-shrink: 0;
   background: #fff;
-  border-radius: 6px;
-  padding: 10px 14px;
+  border-radius: 4px;
+  padding: 4px 8px;
 }
-.header-logo img { display: block; width: 190px; height: auto; }
+.header-logo img { display: block; width: 110px; height: auto; }
 .site-header h1 {
   margin: 4px 0 8px;
   font-size: 2.6rem;
@@ -201,7 +201,7 @@ figcaption {
 @media (max-width: 600px) {
   .site-header h1 { font-size: 2rem; }
   .header-inner { flex-direction: column-reverse; align-items: flex-start; gap: 20px; }
-  .header-logo img { width: 150px; }
+  .header-logo img { width: 96px; }
   .headline { font-size: 1.25rem; }
   .clock-pair { gap: 16px; }
   .clock-pair img { width: 45%; }
